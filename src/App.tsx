@@ -1,4 +1,5 @@
 import React from "react";
+import FirstAndSecond from "./components/FirstAndSecond";
 
 import { Main, Section, Sticky } from "./styles";
 
@@ -11,8 +12,7 @@ function App() {
 
       <Main style={{ height: "1610vh" }}>
         <Section style={{ height: "72.7%" }}>
-          <Sticky className="first"></Sticky>
-          <Sticky className="second"></Sticky>
+          <FirstAndSecond />
         </Section>
         <Section style={{ height: "9.7%" }}>
           <Sticky className="third"></Sticky>
