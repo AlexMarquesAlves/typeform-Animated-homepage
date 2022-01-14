@@ -1,16 +1,11 @@
-import { ReactNode } from 'react';
+import React from "react";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
-interface FourthProps {
-  children: ReactNode;
-}
-
-function Fourth({ children }: FourthProps) {
+const Fourth: React.FC = () => {
   return (
     <Container>
       <h1>Fourth</h1>
-      {children}
     </Container>
   );
 };
