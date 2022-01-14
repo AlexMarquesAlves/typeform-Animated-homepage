@@ -1,38 +1,28 @@
-import React from 'react'
+import React from "react";
 
-import { Main, Section, Sticky } from './styles'
+import { Main, Section, Sticky } from "./styles";
 
-import GlobalStyles from './styles/global'
-import FirstAndSecond from './components/FirstAndSecond'
+import GlobalStyles from "./styles/global";
 
 function App() {
-  React.useEffect(() => {
-    window.scrollTo({ top: 0 })
-  }, [])
-
   return (
     <>
       <GlobalStyles />
 
-      <Main style={{ height: '1610vh' }}>
-        {/* <Header /> */}
-
-        <Section style={{ height: '65.9%' }}>
-          <FirstAndSecond />
+      <Main style={{ height: "1610vh" }}>
+        <Section style={{ height: "72.7%" }}>
+          <Sticky className="first"></Sticky>
+          <Sticky className="second"></Sticky>
         </Section>
-
-        <Section>
-          <Sticky className="third" />
+        <Section style={{ height: "9.7%" }}>
+          <Sticky className="third"></Sticky>
         </Section>
-
-        <Section>
-          <Sticky className="fourth" />
+        <Section style={{ height: "10.1%" }}>
+          <Sticky className="fourth"></Sticky>
         </Section>
-
-        {/* <Footer /> */}
       </Main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
