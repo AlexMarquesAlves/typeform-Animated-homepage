@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+
 import { Sticky } from "../../styles";
 
 const FirstAndSecond: React.FC = () => {
