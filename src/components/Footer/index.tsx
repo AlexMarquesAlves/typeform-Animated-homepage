@@ -1,16 +1,11 @@
-import { ReactNode } from 'react';
+import React from "react";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
-interface FooterProps {
-  children: ReactNode;
-}
-
-function Footer({ children }: FooterProps) {
+const Footer: React.FC = () => {
   return (
     <Container>
       <h1>Footer</h1>
-      {children}
     </Container>
   );
 };
