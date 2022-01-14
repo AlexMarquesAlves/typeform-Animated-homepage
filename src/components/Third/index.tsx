@@ -1,16 +1,11 @@
-import { ReactNode } from 'react';
+import React from "react";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
-interface ThirdProps {
-  children: ReactNode;
-}
-
-function Third({ children }: ThirdProps) {
+const Third: React.FC = () => {
   return (
     <Container>
       <h1>Third</h1>
-      {children}
     </Container>
   );
 };
